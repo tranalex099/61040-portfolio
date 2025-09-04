@@ -4,6 +4,8 @@ This is my portfolio repository for 6.1040. This is the [template repository.](h
 # About Me
 *My name is Alex Tran, it's nice to meet you! [Here is a link to my real website (it's a work in progress...).](https://alexhtran.com)*
 
+This semester in 6.1040, I want to learn how to design and build a software system from scratch.
+
 Some fun facts about me:
 1. I love cooking.
 2. I do synthetic biology.
@@ -13,4 +15,5 @@ Some fun facts about me:
 
 
 # Table of Contents
-[Link to Assignment 1](assignments/assignment1.md)
+[Link to Assignment 1](assignments/assignment1.md)  
+[Link to Assignment 2](assignments/assignment2.md)
