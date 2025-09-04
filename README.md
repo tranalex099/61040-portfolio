@@ -1,16 +1,15 @@
-# Template Portfolio
-This will be your portfolio repository. Use this as a [template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) and customize it to your own tastes. We gave you a starting point with a space to describe yourself and a link to where your assignment 1 file can be.
+# 6.1040 Portfolio
+This is my portfolio repository for 6.1040. This is the [template repository.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository)
 
 # About Me
-*My name is Amber Horvath, I'm a postdoctoral associate researching code comprehension interventions, it's nice to meet you! [Here is a link to my real website.](https://amberhorvath.com)
-Now you should write something about yourself here!*
+*My name is Alex Tran, it's nice to meet you! [Here is a link to my real website (it's a work in progress...).](https://alexhtran.com)*
 
 Some fun facts about me:
-1. I love hockey.
-2. I do pottery.
-3. I have an extra bone in my right foot.
+1. I love cooking.
+2. I do synthetic biology.
+3. I can do a headstand.
 
-![picture of snow leopard mama and baby](https://pbs.twimg.com/media/GzYlia3XMAAWfm4?format=jpg&name=4096x4096)
+![picture of a brown and a white alpaca](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf-9XHJ1aVmfYeo56S6uZfysW0Ohjg4Pciww&s)
 
 
 # Table of Contents
