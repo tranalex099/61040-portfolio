@@ -110,16 +110,16 @@
 10. [Monaru – Personal concierge for friendships](https://medium.com/@kaanchi_chopra/monaru-app-design-58d2d9c588b6) - A former app that reminded people to stay in touch with close friends, like a “CRM for your personal life.” It directly tackled forgetting to reach out, but failed to sustain adoption.
 
 ### Running and Fitness Planning: Customizable Route Variety
-1. [Citation link]() — one sentence explanation
-2. [Citation link]() — one sentence explanation
-3. [Citation link]() — one sentence explanation
-4. [Citation link]() — one sentence explanation
-5. [Citation link]() — one sentence explanation
-6. [Citation link]() — one sentence explanation
-7. [Citation link]() — one sentence explanation
-8. [Citation link]() — one sentence explanation
-9. [Citation link]() — one sentence explanation
-10. [Citation link]() — one sentence explanation
+1. [High variety boosts adherence](https://pubmed.ncbi.nlm.nih.gov/26546241/) — Inactive individuals assigned varied exercise routines had significantly higher adherence than those with repetitive plans.
+2. [Strava – Suggested Routes](https://www.tomsguide.com/wellness/fitness/ive-just-tried-strava-premium-and-this-is-the-feature-id-pay-for-twice) — Offers personalized routes based on distance, terrain, and difficulty. Useful but behind a paywall, and less focused on start-end constraints.
+3. [MapMyRun](https://www.mapmyrun.com/) — Enables plotting and sharing GPS-based routes, great for route discovery and tracking but lacks dynamic daily variations or fixed start/finish flexibility.
+4. [Runners prioritize environment](https://pmc.ncbi.nlm.nih.gov/articles/PMC6446270/) — Studies found that runners value green, lively and comfortable routes far more than abstract performance metrics.
+5. [Scenery increases satisfaction](https://www.thesize15runner.com/2023/10/25/how-running-routes-can-impact-your-running-mindset/) — Exposure to natural environments such as eye-level greenery and blue spaces significantly improves enjoyment during runs.
+6. [Rotating routes prevents burnout](https://lauranorrisrunning.com/the-benefits-of-varying-your-running-route/) — Experts note that varying routes counters mental fatigue (route fatigue) and helps maintain consistency.
+7. [Variety builds endurance and reduces injury](https://youraustinmarathon.com/important-to-add-running-variety-1/) — Using different running routes and surface types strengthens different muscles and supports growth.
+8. [Trail running improves mental and physical health](https://pmc.ncbi.nlm.nih.gov/articles/PMC6388409/) — Trails enhance mindfulness, strengthen joints, and are seen as therapeutic escapes from monotony.
+9. [Sensory-rich routes elevate experience](https://arxiv.org/html/2505.05817v1) — Researchers found that scents, visuals, and ambient sounds shape runners' emotional experience and preferences.
+10. [Research study on running app features](https://arxiv.org/abs/2206.09613) — Highlights that variety and personalization in running apps boost intrinsic motivation. Validates the need for dynamic variability.
 
 ---
 
