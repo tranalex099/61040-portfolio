@@ -12,7 +12,7 @@
 - **Local and Social News**: Find out what's going on around you and what people are saying.
 - **Family Medical History Tracking**: Easily stay updated on risk factors to look out for while maintaining privacy.
 
-### Top 3 Domains (expanded)
+### Top 3 Domains
 1. **Running and Fitness Planning**  
    I want to run more consistently, but I often don’t know where to start, where to run, how far, or what route will be both safe and enjoyable. Fitness apps exist, but many focus more on tracking performance rather than helping beginners plan routes that fit their needs. I’m drawn to this domain because I’ve personally felt the barrier of not knowing where to go, and lowering that friction could make running more approachable for many people.
 2. **Match to First Date**  
@@ -24,7 +24,6 @@
 
 ## Problems
 
-### All Candidate Problems
 **Running and Fitness Planning**
 - Unclear Distance & Progression – It’s hard to figure out how far to run or how to gradually increase distance.
 - Staying Motivated to Run – Without structure, people lose motivation and stop running after a few attempts.
@@ -131,7 +130,7 @@
 - Last Minute Openings — If a match suddenly has free time, they can broadcast a “free now” status to active matches, reducing delays caused by overplanning.
 
 ### Maintaining Friendships: Forgetting to Reach Out
-- Micro-Bids — Quick, low-friction actions (like sending a “thinking of you,” photo, or meme) that keep the connection alive between longer conversations.
+- Micro-Bids — Quick, low-friction actions (like sending a “thinking of you,” photo, or meme) to keep the connection alive between longer conversations. Can build a profile of them to recommend things they would like to see that ran across during your browsing or scrolling. 
 - Friend Check-In Reminders — Gentle nudges to reach out at chosen intervals. 
 - Friendship Balance Meter — Shows who you’ve reached out to recently vs. who you may be neglecting, helping even out effort.
 
