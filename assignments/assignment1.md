@@ -86,22 +86,47 @@
 ## Evidence
 
 ### Match to First Date: Scheduling Logistics
-1. [Citation link] — one sentence explanation
-2. [Citation link] — one sentence explanation
-3. ...
+1. [Citation link]() — one sentence explanation
+2. [Citation link]() — one sentence explanation
+3. [Citation link]() — one sentence explanation
+4. [Citation link]() — one sentence explanation
+5. [Citation link]() — one sentence explanation
+6. [Citation link]() — one sentence explanation
+7. [Citation link]() — one sentence explanation
+8. [Citation link]() — one sentence explanation
+9. [Citation link]() — one sentence explanation
+10. [Citation link]() — one sentence explanation
 
 ### Maintaining Friendships: Forgetting to Reach Out
-(same)
+1. [Reluctance to Reach Out](https://www.cbsnews.com/news/reaching-out-old-friends-nature-study/) - People are reluctant to reconnect, even when they want to. Friendships fade not from lack of care, but from lack of action. Reconnecting feels hard even when closeness remains.
+2. [Friendship Recession](https://en.wikipedia.org/wiki/Friendship_recession) - The number of close friendships in the U.S. has dropped sharply since 1990.
+3. [State of American Friendship](https://www.americansurveycenter.org/research/the-state-of-american-friendship-change-challenges-and-loss/) - Nearly 59% of Americans lost touch with friends in the past year.
+4. [Health Benefits of Friendships](https://time.com/24122/how-to-make-friends-easily-and-strengthen-the-friendships-you-have/) - Having fewer friends carries health risks comparable to smoking or obesity. Many adults now report having zero close confidants.
+5. [Why We Lose Friends](https://st.network/analysis/top/why-do-we-lose-our-friends-friendship.html) - Losing friends emotionally resembles the pain of ending romantic relationships.
+6. [When We Have the Most Friends](https://www.thesun.co.uk/wellness/34379059/age-likely-have-most-friends/) - Friends are crucial for mental health and resilience. Belonging improves well-being and safety perceptions, especially post-30.
+7. [BeReal – Social app for authentic moments](https://bereal.com/) - Sends daily prompts to share a photo in real time; encourages small updates but doesn’t specifically support one-on-one reconnection.
+8. [Marco Polo – Video messaging app](https://www.marcopolo.me/) - Lets people send short video check-ins, making reconnection easy, but requires both sides to be engaged actively.
+9. [Facebook Memories](https://about.fb.com/news/2018/06/all-of-your-facebook-memories-are-now-in-one-place/) - Surfaces past posts as reminders, which can spark reconnection, but often feels shallow and is tied to a noisy platform.
+10. [Monaru – Personal concierge for friendships](https://medium.com/@kaanchi_chopra/monaru-app-design-58d2d9c588b6) - A former app that reminded people to stay in touch with close friends, like a “CRM for your personal life.” It directly tackled forgetting to reach out, but failed to sustain adoption.
 
 ### Running and Fitness Planning: Customizable Route Variety
-(same)
+1. [Citation link]() — one sentence explanation
+2. [Citation link]() — one sentence explanation
+3. [Citation link]() — one sentence explanation
+4. [Citation link]() — one sentence explanation
+5. [Citation link]() — one sentence explanation
+6. [Citation link]() — one sentence explanation
+7. [Citation link]() — one sentence explanation
+8. [Citation link]() — one sentence explanation
+9. [Citation link]() — one sentence explanation
+10. [Citation link]() — one sentence explanation
 
 ---
 
 ## Features
 
 ### Match to First Date: Scheduling Logistics
-- Date Spot Polls — Lets one person send 2–3 time/place options, and the other simply taps their preference — no endless back-and-forth.
+- Date Spot Polls — Lets one person send 2–3 time/place options, and the other simply taps their preference, no endless back and forth.
 - Shared Availability Windows — Instead of specific time slots, each person marks broad free windows (e.g., “weekday evenings” or “Sunday morning”), and the app finds overlaps.
 - Last Minute Openings — If a match suddenly has free time, they can broadcast a “free now” status to active matches, reducing delays caused by overplanning.
 
