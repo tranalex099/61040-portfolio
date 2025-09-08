@@ -86,16 +86,16 @@
 ## Evidence
 
 ### Match to First Date: Scheduling Logistics
-1. [Citation link]() — one sentence explanation
-2. [Citation link]() — one sentence explanation
-3. [Citation link]() — one sentence explanation
-4. [Citation link]() — one sentence explanation
-5. [Citation link]() — one sentence explanation
-6. [Citation link]() — one sentence explanation
-7. [Citation link]() — one sentence explanation
-8. [Citation link]() — one sentence explanation
-9. [Citation link]() — one sentence explanation
-10. [Citation link]() — one sentence explanation
+1. [Factors Affecting Online Dating Success](https://www.researchgate.net/publication/376965581_Factors_Affecting_Online_Dating_Success) — Platform design significantly affects whether matches progress to offline meetings.
+2. [Independent: Gen Z frustrated with dating apps](https://www.the-independent.com/life-style/love-sex/dating-apps-dates-hinge-bumble-tinder-b2487185.html) — A 2024 Pew survey showed post-pandemic dating feels harder, with over 90% of Gen Z expressing frustration.
+3. [Systematic review on online dating success](https://pmc.ncbi.nlm.nih.gov/articles/PMC7557852/) — Many users drop off before meeting in person due to design friction.
+4. [Love and algorithms: The future of dating apps](https://www.apa.org/news/podcasts/speaking-of-psychology/dating-apps) — Nearly half of new couples now meet online, raising the stakes for dating apps to convert matches to dates.
+5. [Emotional impact of dating apps](https://formative.jmir.org/2025/1/e70594) — Dating apps linked to anxiety and stress; smoother scheduling could reduce emotional burden.
+6. [Distracted Dating](https://www.verywellmind.com/living-well-7510832) — Highlights importance of reducing online friction to support real connection.
+7. [Mobile Dating](https://en.wikipedia.org/wiki/Mobile_dating) — Ghosting and superficial matching contribute to drop-off before dates are scheduled.
+8. [Thursday App](https://www.getthursday.com/) — Operates only one day a week to encourage rapid decision-making and same-day dates. While it creates urgency, the time limitation might stress users and doesn’t allow flexible scheduling.
+9. [Offline Dating Experiences](https://www.researchgate.net/publication/363191594_Experiences_of_Romantic_Attraction_Are_Similar_Across_Dating_Apps_and_Offline_Dates_in_Young_Adults) — Research finds that experiences of romantic attraction via apps are similar to offline dates, suggesting that digital dating failures often occur in coordination stages, not chemistry.
+10. [Instimate](https://www.axios.com/local/charlotte/2018/04/13/instimate-dating-app-charlotte-nc-123165) — Gathers preferences, availability, and venue ideas up front, then schedules dates automatically—sometimes even before matches message. Strong conceptually, but complex onboarding and limited rollout make it less accessible.
 
 ### Maintaining Friendships: Forgetting to Reach Out
 1. [Reluctance to Reach Out](https://www.cbsnews.com/news/reaching-out-old-friends-nature-study/) - People are reluctant to reconnect, even when they want to. Friendships fade not from lack of care, but from lack of action. Reconnecting feels hard even when closeness remains.
