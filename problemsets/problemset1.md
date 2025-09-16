@@ -169,6 +169,8 @@ userSuffixes (owner: User): (suffix: Suffix)
   **requires** owner User to exist  
   **effects** returns associated suffixes
 
+---
+
 ### Conference Room Booking
 
 **concept** ConferenceRoomBooking[User, Room]
@@ -225,6 +227,8 @@ viewUserBookings (owner: User): (booking: Bookings)
 viewRoomBookings (room: Room): (booking: Bookings)  
 **requires** bookings to be associated with room  
 **effects** return bookings for room
+
+---
 
 ### Address Verification
 
