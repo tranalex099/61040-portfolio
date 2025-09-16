@@ -52,7 +52,7 @@ register (username: String, password: String): (user: User)
   **requires** username to not already exist  
   **effects** creates and returns a new user User with username and password, add username to set of usernames  
 
-authenticate (username: String, password: String): (user: User)
+authenticate (username: String, password: String): (user: User)  
   **requires** user User to exist with matching username and password  
   **effects** returns user User
 
@@ -66,8 +66,8 @@ authenticate (username: String, password: String): (user: User)
     a set of Users with...  
       a username String  
       a password String  
-      a confirmed Flag
-      a token Token
+      a confirmed Flag  
+      a token Token  
 
     a set of usernames
       a user User
@@ -76,7 +76,7 @@ register (username: String, password: String): (user: User, token: Token)
   **requires** username to not already exist  
   **effects** creates and returns a new user User with username, password, confirmed to False, and a token Token, add username to set of usernames  
 
-confirm (username: String, token: Token): (user: User)
+confirm (username: String, token: Token): (user: User)  
   **requires** user User to exist with matching username and token  
   **effects** sets confirmed Flag to True
 
@@ -146,7 +146,7 @@ the user can input the shorter URL to see the longer URL, see all of their short
   a set of Suffixes  
     an owner User  
 
-  a set of owner Users
+  a set of owner Users  
     a suffix Suffix
 
 **actions**  
@@ -176,29 +176,97 @@ userSuffixes (owner: User): (suffix: Suffix)
 **purpose** to let users reserve conference rooms at specific times
 
 **principle**  
-a user creates
+a user selects a room and time slot, and creates a booking with a title and duration;  
+the booking then becomes visible to others, and blocks overlapping bookings for the same room and time;  
+the booking remains visible until it is cancelled or the time has passed.
 
 **state**  
-  a set of Slots  
+  a set of Slots with  
     a Room  
     a Time  
 
-  a set of Bookings  
-    a User  
+  a set of Bookings with  
+    an owner User  
     a Slot  
+    a Title
+    a Duration
+  
+  a set of Users with  
+    a set of Bookings
+
+  a set of Rooms with  
+    a set of Bookings
 
 **actions**  
 createSlot (room: Room, time: Time)  
+**requires** slot for room at time does not exist  
 **effects** add a new slot for room at time
 
 deleteSlot (slot: Slot)  
 **requires** no bookings exist for this slot  
-**effects** remove s from the set of slots
+**effects** remove slot from the set of Slots
 
-book (u: User, r: Room, t: Time): Booking  
-**requires** some unbooked slot for r at t  
-**effects** add new booking for slot with user u
+book (owner: User, room: Room, time: Time, title: Title, duration: Duration, slot: Slot): (booking: Booking)  
+**requires** an unbooked slot for room at time  
+**effects** add new booking with owner, title, duration and slot for room at time
 
-cancel (b: Booking)  
-**requires** b is an existing booking  
-**effects** remove b from the set of bookings
+cancelBooking (booking: Booking, owner: User)  
+**requires** booking exists and owned by owner User  
+**effects** remove booking from the set of Bookings
+
+editBooking (booking: Booking, owner: User, newTitle: Title, newTime: Time, newDuration: Duration)  
+**requires** booking exists and owned by owner User  
+**effects** update booking with new information
+
+viewUserBookings (owner: User): (booking: Bookings)  
+**requires** bookings to be owned by user  
+**effects** return all current bookings for owner User
+
+viewRoomBookings (room: Room): (booking: Bookings)  
+**requires** bookings to be associated with room  
+**effects** return bookings for room
+
+### Address Verification
+
+**concept** AddressVerification[User, Authority, AddressPart, Assertion]
+
+**purpose** to verify the user's claimed address is correct
+
+**principle**  
+a user provides some part of their address;  
+the request is made to the authority to check the claim;  
+the authority checks it against its records and returns a decision;  
+the asking party checks if it was a match or no match.
+
+**state**  
+  a set of Requests with  
+    an owner User  
+    a scope AddressScope  
+    a claimed AddressPart  
+    a status Flag  
+    a verifier Authority
+
+  a set of Users with  
+    a set of Requests  
+
+  a set of Assertions with  
+    a Request  
+    an Authority  
+    a decision Flag  
+    an evaluated Flag
+
+  a set of Authoritys with    
+    a Token
+
+**actions**  
+initiateRequest(owner: User, scope: AddressScope, claimed: AddressPart, verifier: Authority): (request: Request)  
+**requires** no currently pending requests for the same user and scope  
+**effects** create a new request with owner, scope, claimed, verifier, and status set to pending.
+
+verifyRequest(request: Request, authority: Authority): (assertion: Assertion)  
+**requires** request status pending, verifier matches authority, and authority holds a valid token  
+**effects** authority checks claimed AddressPart against its record, request status set to verified, and returns assertion with decision and evaluated set to unevaluated.  
+
+evaluateAssertion(assertion: Assertion): (decision: Decision)  
+**requires** associated request status is verified, and evaluated is unevaluated  
+**effects** returns the decision Flag of match or no match and sets evaluated to evaluated.
