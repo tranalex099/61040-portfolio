@@ -96,8 +96,8 @@ TrailMixer instantly crafts distance constrained, trail-first running routes fro
     - deleteReq (request: Request)
         - **requires** request to exist
         - **effect** deletes the request and associated information
-    - readReq (request: Request): (request: Request)
-        - **requires** request to exist
+    - readReq (title: String): (request: Request)
+        - **requires** request with title to exist
         - **effect** returns request
 
 - **concept** WalkablePaths []
@@ -164,7 +164,8 @@ TrailMixer instantly crafts distance constrained, trail-first running routes fro
 
 - **sync** createRoute
 - **when**
-    - Request.createRoute (owner: User, request: Request)
+    - Request.createRoute (owner: User, title: String)
+    - RouteConstraints.readReq (title: String): (request: Request)
     - WalkablePaths.getEdges () : (edges: a set of Edges)
 - **then**
     - RouteGeneration.createRoute (owner: User, request: Request, edges)
