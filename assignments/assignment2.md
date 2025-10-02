@@ -96,7 +96,7 @@ TrailMixer instantly crafts distance constrained, trail-first running routes fro
     - deleteReq (request: Request)
         - **requires** request to exist
         - **effect** deletes the request and associated information
-    - readRed (request: Request): (request: Request)
+    - readReq (request: Request): (request: Request)
         - **requires** request to exist
         - **effect** returns request
 
@@ -150,17 +150,33 @@ TrailMixer instantly crafts distance constrained, trail-first running routes fro
     - deleteRoute (owner: User, route: Route)
         - **requires** owner and request to both exist and have the same owner
         - **effect** deletes the route and associated information
-    - readRoute (owner: User, route: Route): (a set of Edges)
+    - readRoute (owner: User, request: Request): (a set of Edges)
         - **requires** owner and request to both exist and have the same owner
         - **effect** returns a set of Edges from route
 
 # Syncs
 
+- **sync** createReq
+- **when**
+    - Request.createReq (owner: User, title: String, start: Coord, end: Coord, target: Distance, tolerance: Distance)
+- **then**
+    - RouteConstraints.createReq (owner: User, title: String, start: Coord, end: Coord, target: Distance, tolerance: Distance)
+
+- **sync** createRoute
+- **when**
+    - Request.createRoute (owner: User, request: Request)
+    - WalkablePaths.getEdges () : (edges: a set of Edges)
+- **then**
+    - RouteGeneration.createRoute (owner: User, request: Request, edges)
+
 - **sync** viewRoute
 - **when**
-    - Request.createRoute (owner: User, request: Request, edges: set of Edges)
+    - Request.viewRoute (owner: User, request: Request)
 - **then**
-    - RouteGeneration.readRoute (owner, route): (a set of Edges)
+    - RouteGeneration.readRoute (owner, request): (a set of Edges)
+
+### Notes
+In TrailMixer, RouteConstraints serves as the intent container: it stores a user’s start/end, target distance, and tolerance, with ownership recorded as owner: User; it has no knowledge of graphs or algorithms and simply captures constraints that features like Distance Dial and Remix reuse. WalkablePaths is the authoritative pedestrian network, maintaining generic edges (startNode, endNode, length, available) and exposing the current usable set via getEdges(); it is completely agnostic to users, requests, and routes, acting only as a data source. RouteGeneration is the solver/explainer that, given a (User, Request, set<Edges>), constructs candidate routes that connect edge-to-edge, start near the request’s start, end near its end, and land within target ± tolerance; it can also return a route for display or delete it, but never mutates constraints or the network. Data flows declaratively through syncs: when a request is created or modified, RouteConstraints emits constraints, WalkablePaths provides the usable edges, and RouteGeneration builds a candidate; if edges change (status update or deletion), affected routes are invalidated and optionally regenerated; when a request is read, the most recent route is surfaced. Generic types are bound as follows: User is the authenticated app user; Request is the identifier from RouteConstraints; Edge is the structural element from WalkablePaths (treated generically—only endpoints, length, availability are required); and Coord/Distance are primitive types with minimal assumptions (e.g., distance > 0). Independence is preserved because RouteConstraints never inspects edge internals, WalkablePaths never inspects user or request internals, and RouteGeneration depends only on public state/actions from the other two; ownership checks occur only at action boundaries (e.g., create/read route), keeping access control separate from graph and routing logic.
 
 # UI Sketches
 ### Sketch 1
